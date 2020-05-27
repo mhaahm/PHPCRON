@@ -1,0 +1,20 @@
+{
+    "name": "dell_pc/pcron",
+    "description": "PHP crontab run",
+    "type": "library",
+    "authors": [
+        {
+            "name": "mha",
+            "email": "moham.hassen@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "PCRON\\": "src/" }
+    },
+    "require": {
+        "symfony/process": "^5.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.0"
+    }
+}
