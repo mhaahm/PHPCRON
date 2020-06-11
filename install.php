@@ -22,3 +22,15 @@ $sql = "CREATE TABLE IF NOT EXISTS pcron
          day_name VARCHAR(255) NOT NULL,
          cmd VARCHAR(255))";
 $res = $pdo->query($sql);
+// create service instance
+const SERVICE_NAME = 'PCRON';
+const SERVICE_NAME_DISPLAY = 'PHP crontab service';
+const SERVICE_DESC = 'PHP crontab manager';
+$res = win32_create_service([
+    'service' => SERVICE_NAME,
+    'display' => SERVICE_NAME_DISPLAY,
+    'description' => SERVICE_DESC,
+    'path' =>  'php',
+    'params' => __DIR__."\\PcronService.php"
+]);
+debug_zval_dump($res);

@@ -7,10 +7,6 @@
  */
 namespace PCRON\Model;
 
-/**
- * Class Cron
- * @package PCRON\Model
- */
 class Cron
 {
     private $id;
