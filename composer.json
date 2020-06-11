@@ -1,5 +1,5 @@
 {
-    "name": "dell_pc/pcron",
+    "name": "pcron/pcron",
     "description": "PHP crontab run",
     "type": "library",
     "minimum-stability": "dev",
